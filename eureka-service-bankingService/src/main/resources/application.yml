@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bank-service
+server:
+  port: 8096
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8085/eureka
+  instance:
+    hostname: localhost
